@@ -175,7 +175,7 @@ public class AppFileOperateHelper {
         BufferedOutputStream outputStream = null;
         try {
             inputStream = new BufferedInputStream(new FileInputStream(new File(copyFilePath)));
-            outputStream = new BufferedOutputStream(new FileOutputStream(new File(getAppFilesDirFilePath(saveFileName))));
+            outputStream = new BufferedOutputStream(new FileOutputStream(new File(getAppMediaDirFilePath(saveFileName))));
             byte[] buffer = new byte[sBufferSize];
             int len;
             while ((len = inputStream.read(buffer, 0, sBufferSize)) != -1) {
@@ -202,7 +202,7 @@ public class AppFileOperateHelper {
         BufferedOutputStream outputStream = null;
         try {
             inputStream = new BufferedInputStream(new FileInputStream(copyFile));
-            outputStream = new BufferedOutputStream(new FileOutputStream(new File(getAppFilesDirFilePath(saveFileName))));
+            outputStream = new BufferedOutputStream(new FileOutputStream(new File(getAppMediaDirFilePath(saveFileName))));
             byte[] buffer = new byte[sBufferSize];
             int len;
             while ((len = inputStream.read(buffer, 0, sBufferSize)) != -1) {

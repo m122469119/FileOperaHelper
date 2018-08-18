@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         Log.e(MainActivity.class.getName(), AppFileOperateHelper.getStringFromFilesDirFile("text"));
 
+
+
     }
 
 
